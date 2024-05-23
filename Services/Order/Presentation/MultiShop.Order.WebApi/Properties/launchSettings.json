@@ -2,13 +2,13 @@
   "profiles": {
     "MultiShop.Order.WebApi": {
       "commandName": "Project",
-      "launchBrowser": true,
+      "launchBrowser": false,
       "launchUrl": "swagger",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
       "dotnetRunMessages": true,
-      "applicationUrl": "https://localhost:7154;http://localhost:5165"
+      "applicationUrl": "https://localhost:7072"
     },
     "IIS Express": {
       "commandName": "IISExpress",
