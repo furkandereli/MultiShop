@@ -2,14 +2,9 @@
 
 namespace MultiShop.WebUI.Controllers
 {
-    public class ProductListController : Controller
+    public class ContactController : Controller
     {
         public IActionResult Index()
-        {
-            return View();
-        }
-
-        public IActionResult ProductDetail()
         {
             return View();
         }
