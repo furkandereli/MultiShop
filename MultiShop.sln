@@ -51,7 +51,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiShop.Basket", "Service
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontends", "Frontends", "{F7CA1CEB-E8D5-40CB-B58F-DE692432FA11}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiShop.WebUI", "Frontends\MultiShop.WebUI\MultiShop.WebUI.csproj", "{FB588C65-0705-4F8E-9C56-595BE4AA55D8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiShop.WebUI", "Frontends\MultiShop.WebUI\MultiShop.WebUI.csproj", "{FB588C65-0705-4F8E-9C56-595BE4AA55D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiShop.DtoLayer", "Frontends\MultiShop.DtoLayer\MultiShop.DtoLayer.csproj", "{C1146F22-A269-4CA3-AB17-0C4C90EBC039}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -115,6 +117,10 @@ Global
 		{FB588C65-0705-4F8E-9C56-595BE4AA55D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB588C65-0705-4F8E-9C56-595BE4AA55D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB588C65-0705-4F8E-9C56-595BE4AA55D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1146F22-A269-4CA3-AB17-0C4C90EBC039}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1146F22-A269-4CA3-AB17-0C4C90EBC039}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1146F22-A269-4CA3-AB17-0C4C90EBC039}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1146F22-A269-4CA3-AB17-0C4C90EBC039}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -142,6 +148,7 @@ Global
 		{C8DA2E39-DFD0-4EF9-8F75-3E295D283C38} = {71C6139C-5EAF-42AC-8495-E8C0E741ED7E}
 		{AA71C60F-1EC0-49B7-851E-EB293E854670} = {C8DA2E39-DFD0-4EF9-8F75-3E295D283C38}
 		{FB588C65-0705-4F8E-9C56-595BE4AA55D8} = {F7CA1CEB-E8D5-40CB-B58F-DE692432FA11}
+		{C1146F22-A269-4CA3-AB17-0C4C90EBC039} = {F7CA1CEB-E8D5-40CB-B58F-DE692432FA11}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {557860BB-7A03-4ADE-B2E6-CEAE3752CF7B}
