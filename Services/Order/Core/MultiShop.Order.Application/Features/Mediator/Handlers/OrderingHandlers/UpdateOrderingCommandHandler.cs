@@ -10,11 +10,11 @@ using System.Threading.Tasks;
 
 namespace MultiShop.Order.Application.Features.Mediator.Handlers.OrderingHandlers
 {
-    public class UpdateOrderinCommandHandler : IRequestHandler<UpdateOrderingCommand>
+    public class UpdateOrderingCommandHandler : IRequestHandler<UpdateOrderingCommand>
     {
         private readonly IRepository<Ordering> _repository;
 
-        public UpdateOrderinCommandHandler(IRepository<Ordering> repository)
+        public UpdateOrderingCommandHandler(IRepository<Ordering> repository)
         {
             _repository = repository;
         }
