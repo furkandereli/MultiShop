@@ -1,18 +1,15 @@
-﻿<div class="col-lg-4">
-    <div class="product-offer mb-30" style="height: 200px;">
-        <img class="img-fluid" src="https://img.freepik.com/free-photo/portrait-happy-lady-sunglasses-standing-with-colorful-shopping-bags-hands-pink-background-young-woman-standing-white-shirt-denim-shorts_574295-1182.jpg?size=626&ext=jpg&ga=GA1.1.1700460183.1713225600&semt=ais" alt="">
-        <div class="offer-text">
-            <h6 class="text-white text-uppercase">İNDİRİM 20%</h6>
-            <h3 class="text-white mb-3">Özel Teklifler</h3>
-            <a href="" class="btn btn-primary">Alışverişe Başlayın</a>
+﻿@model List<ResultSpecialOfferDto>
+
+<div class="col-lg-4">
+    @foreach (var item in Model)
+    {
+        <div class="product-offer mb-30" style="height: 200px;">
+            <img class="img-fluid" src="@item.ImageUrl" alt="">
+            <div class="offer-text">
+                <h6 class="text-white text-uppercase">@item.Title</h6>
+                <h3 class="text-white mb-3">@item.Subtitle</h3>
+                <a href="" class="btn btn-primary">Alışverişe Başlayın</a>
+            </div>
         </div>
-    </div>
-    <div class="product-offer mb-30" style="height: 200px;">
-        <img class="img-fluid" src="https://www.nebim.com.tr/i/content/1532_2_1170x500.png" alt="">
-        <div class="offer-text">
-            <h6 class="text-white text-uppercase">İNDİRİM 20%</h6>
-            <h3 class="text-white mb-3">Günün Fırsatı</h3>
-            <a href="" class="btn btn-primary">Hemen Kullanın</a>
-        </div>
-    </div>
+    }
 </div>
