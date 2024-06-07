@@ -1,0 +1,43 @@
+﻿@model List<ResultBrandDto>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/AdminLayout/Index.cshtml";
+    int count = 0;
+}
+
+<section class="content container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="chart-box">
+                <div class="bs-example" data-example-id="bordered-table">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Marka Adı</th>
+                                <th>Marka Görsel</th>
+                                <th>Sil</th>
+                                <th>Güncelle</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                count++;
+                                <tr>
+                                    <th scope="row" style="text-align:left; vertical-align:middle;">@count</th>
+                                    <td style="text-align:left; vertical-align:middle;">@item.BrandName</td>
+                                    <td style="text-align:center; vertical-align:middle;"><img src="@item.ImageUrl" style="width:75px; height:auto;"/></td>
+                                    <td style="text-align:left; vertical-align:middle;"><a href="/Admin/Brand/DeleteBrand/@item.BrandId" class="btn btn-danger">Sil</a></td>
+                                    <td style="text-align:left; vertical-align:middle;"><a href="/Admin/Brand/UpdateBrand/@item.BrandId" class="btn btn-success">Güncelle</a></td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                    <a href="/Admin/Brand/CreateBrand/" class="btn btn-primary">Marka Oluştur</a></>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
