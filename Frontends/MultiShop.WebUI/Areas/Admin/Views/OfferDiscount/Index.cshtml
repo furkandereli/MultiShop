@@ -1,0 +1,48 @@
+﻿@model List<ResultOfferDiscountDto>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/AdminLayout/Index.cshtml";
+}
+
+<section class="content container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="chart-box">
+                <div class="bs-example" data-example-id="bordered-table">
+                    @if(Model.Count > 1)
+                    {
+                        <div class="alert alert-warning" role="alert">
+                            Tema bütünlüğü için 2 adet ekleme yapmalısınız. Farklı indirimler için öncekileri silebilir ya da güncelleyebilirsiniz.
+                        </div>
+                    }
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>İndirim Teklif Başlığı</th>
+                                <th>İndirim Teklif Alt Başlığı</th>
+                                <th>Sil</th>
+                                <th>Güncelle</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td style="text-align:left; vertical-align:middle;">@item.Title</td>
+                                    <td style="text-align:left; vertical-align:middle;">@item.Subtitle</td>
+                                    <td style="text-align:left; vertical-align:middle;"><a href="/Admin/OfferDiscount/DeleteOfferDiscount/@item.OfferDiscountId" class="btn btn-danger">Sil</a></td>
+                                    <td style="text-align:left; vertical-align:middle;"><a href="/Admin/OfferDiscount/UpdateOfferDiscount/@item.OfferDiscountId" class="btn btn-success">Güncelle</a></td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                    @if (Model.Count < 2)
+                    {
+                        <a href="/Admin/OfferDiscount/CreateOfferDiscount/" class="btn btn-primary">İndirim Teklifi Oluştur</a>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
