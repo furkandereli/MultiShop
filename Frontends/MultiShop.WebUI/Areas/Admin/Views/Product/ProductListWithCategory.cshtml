@@ -20,6 +20,7 @@
                                 <th>Ürün Kategorisi</th>
                                 <th>Sil</th>
                                 <th>Güncelle</th>
+                                <th>Ürün Görselleri</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -33,6 +34,7 @@
                                     <td style="text-align:left; vertical-align:middle;">@item.Category.CategoryName</td>
                                     <td style="text-align:left; vertical-align:middle;"><a href="/Admin/Product/DeleteProduct/@item.ProductId" class="btn btn-danger">Sil</a></td>
                                     <td style="text-align:left; vertical-align:middle;"><a href="/Admin/Product/UpdateProduct/@item.ProductId" class="btn btn-success">Güncelle</a></td>
+                                    <td style="text-align:left; vertical-align:middle;"><a href="/Admin/ProductImage/ProductImageDetail/@item.ProductId" class="btn btn-warning">Ürün Görselleri</a></td>
                                 </tr>
                             }
                         </tbody>
