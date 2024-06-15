@@ -17,6 +17,7 @@
         "AuthenticationProviderKey": "OcelotAuthenticationScheme",
         "AllowedScopes": [ "CatalogFullPermission" ]
       }
+
     },
 
     //Discount Microservice
@@ -36,6 +37,7 @@
         "AuthenticationProviderKey": "OcelotAuthenticationScheme",
         "AllowedScopes": [ "DiscountFullPermission" ]
       }
+
     },
 
     //Order Microservice
@@ -55,6 +57,7 @@
         "AuthenticationProviderKey": "OcelotAuthenticationScheme",
         "AllowedScopes": [ "OrderFullPermission" ]
       }
+
     },
 
     //Cargo Microservice
@@ -74,6 +77,7 @@
         "AuthenticationProviderKey": "OcelotAuthenticationScheme",
         "AllowedScopes": [ "CargoFullPermission" ]
       }
+
     },
 
     //Basket Microservice
@@ -93,6 +97,7 @@
         "AuthenticationProviderKey": "OcelotAuthenticationScheme",
         "AllowedScopes": [ "BasketFullPermission" ]
       }
+
     },
 
     //Comment Microservice
@@ -112,6 +117,7 @@
         "AuthenticationProviderKey": "OcelotAuthenticationScheme",
         "AllowedScopes": [ "CommentFullPermission" ]
       }
+
     },
 
     //Payment Microservice
@@ -131,6 +137,7 @@
         "AuthenticationProviderKey": "OcelotAuthenticationScheme",
         "AllowedScopes": [ "PaymentFullPermission" ]
       }
+
     },
 
     //Images Microservice
@@ -150,6 +157,7 @@
         "AuthenticationProviderKey": "OcelotAuthenticationScheme",
         "AllowedScopes": [ "ImagesFullPermission" ]
       }
+
     }
 
   ],
