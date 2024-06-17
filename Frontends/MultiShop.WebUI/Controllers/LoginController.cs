@@ -78,7 +78,7 @@ namespace MultiShop.WebUI.Controllers
             signInDto.Username = "ali01";
             signInDto.Password = "1111aA*";
 			await _identityService.SignIn(signInDto);
-			return RedirectToAction("Index", "Test");
+			return RedirectToAction("Index", "User");
 		}
 	}
 }
