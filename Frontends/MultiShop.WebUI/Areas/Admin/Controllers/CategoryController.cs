@@ -1,9 +1,6 @@
-﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using MultiShop.DtoLayer.CatalogDtos.CategoryDtos;
 using MultiShop.WebUI.Services.CatalogServices.CategoryServices;
-using Newtonsoft.Json;
-using System.Text;
 
 namespace MultiShop.WebUI.Areas.Admin.Controllers
 {
@@ -49,14 +46,14 @@ namespace MultiShop.WebUI.Areas.Admin.Controllers
         public async Task<IActionResult> CreateCategory(CreateCategoryDto createCategoryDto)
         {
             await _categoryService.CreateCategoryAsync(createCategoryDto);
-            return RedirectToAction("ProductListWithCategory", "Product", new { area = "Admin" });
+            return RedirectToAction("Index", "Category", new { area = "Admin" });
         }
 
         [Route("DeleteCategory/{id}")]
         public async Task<IActionResult> DeleteCategory(string id)
         {
             await _categoryService.DeleteCategoryAsync(id);
-            return RedirectToAction("ProductListWithCategory", "Product", new { area = "Admin" });
+            return RedirectToAction("Index", "Category", new { area = "Admin" });
         }
 
         [HttpGet]
@@ -73,7 +70,7 @@ namespace MultiShop.WebUI.Areas.Admin.Controllers
         public async Task<IActionResult> UpdateCategory(UpdateCategoryDto updateCategoryDto)
         {
             await _categoryService.UpdateCategoryAsync(updateCategoryDto);
-            return RedirectToAction("ProductListWithCategory", "Product", new { area = "Admin" });
+            return RedirectToAction("Index", "Category", new { area = "Admin" });
         }
     }
 }
