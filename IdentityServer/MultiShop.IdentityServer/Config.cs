@@ -40,7 +40,6 @@ namespace MultiShop.IdentityServer
             new ApiScope("ImageFullPermission","Full authority for image operations"),
             new ApiScope("OcelotFullPermission","Full authority for ocelot operations"),
             new ApiScope(IdentityServerConstants.LocalApi.ScopeName)
-
         };
 
         public static IEnumerable<Client> Clients => new Client[]
