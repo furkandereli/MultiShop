@@ -2,6 +2,7 @@
   "profiles": {
     "MultiShop.Discount": {
       "commandName": "Project",
+      "launchBrowser": false,
       "launchUrl": "swagger",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
