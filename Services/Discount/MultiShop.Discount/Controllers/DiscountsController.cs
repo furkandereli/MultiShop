@@ -59,5 +59,12 @@ namespace MultiShop.Discount.Controllers
             await _discountService.UpdateDiscountCouponAsync(updateCouponDto);
             return Ok("İndirim kuponu başarıyla güncellendi !");
         }
+
+        [HttpGet("GetDiscountCouponRate")]
+        public IActionResult GetDiscountCouponRate(string code)
+        {
+            var value = _discountService.GetDiscountCouponRate(code);
+            return Ok(value);
+        }
     }
 }
