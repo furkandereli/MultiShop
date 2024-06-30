@@ -22,7 +22,7 @@ namespace MultiShop.Order.Application.Features.CQRS.Handlers.AddressHandlers
         {
             var value = await _repository.GetByIdAsync(command.AddressId);
             value.City = command.City;
-            value.Detail = command.Detail;
+            value.Detail1 = command.Detail;
             value.District = command.District;
             value.UserId = command.UserId;
             await _repository.UpdateAsync(value);
