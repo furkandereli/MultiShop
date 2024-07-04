@@ -1,11 +1,8 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MultiShop.Order.Application.Features.Mediator.Commands.OrderingCommands;
 using MultiShop.Order.Application.Features.Mediator.Queries.OrderingQueries;
-using MultiShop.Order.Application.Interfaces;
-using MultiShop.Order.Domain.Entities;
 
 namespace MultiShop.Order.WebApi.Controllers
 {
