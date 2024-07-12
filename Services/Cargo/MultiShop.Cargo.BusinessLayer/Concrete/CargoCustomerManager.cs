@@ -1,11 +1,6 @@
 ﻿using MultiShop.Cargo.BusinessLayer.Abstract;
 using MultiShop.Cargo.DataAccessLayer.Abstract;
 using MultiShop.Cargo.EntityLayer.Concrete;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MultiShop.Cargo.BusinessLayer.Concrete
 {
@@ -31,6 +26,11 @@ namespace MultiShop.Cargo.BusinessLayer.Concrete
         public CargoCustomer TGetById(int id)
         {
             return _cargoCustomerDal.GetById(id);
+        }
+
+        public CargoCustomer TGetCargoCustomerById(string id)
+        {
+            return _cargoCustomerDal.GetCargoCustomerById(id);
         }
 
         public void TInsert(CargoCustomer entity)
